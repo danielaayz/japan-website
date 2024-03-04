@@ -8,13 +8,22 @@ header {
 }
 
 .nav {
-   &__menu {
+   display: flex;
+   &__li {
+      list-style: none;
+   }
+   &__link {
    }
 }
 
-@media screen and (max-width: 320px) {
-   .nav__link {
-      display: none;
+@media screen and (min-width: 320px) {
+   .nav {
+      &__list {
+         list-style: none;
+      }
+      &__link {
+         display: none;
+      }
    }
 }
 
@@ -22,6 +31,7 @@ header {
    header {
       height: 9.8vh;
    }
+
    .nav {
       min-width: 303px;
       display: flex;
@@ -30,6 +40,7 @@ header {
          max-width: 303px;
          display: flex;
          justify-content: space-between;
+         list-style: none;
       }
       &__li {
          list-style: none;
