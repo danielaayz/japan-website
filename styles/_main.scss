@@ -1,0 +1,46 @@
+@use "fonts";
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   &__heading {
+      font-family: fonts.$main-header;
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 110%;
+      letter-spacing: -0.8px;
+      text-align: center;
+   }
+   &__info {
+      width: 100%;
+      max-width: 217px;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .container {
+      &__heading {
+         font-size: 6rem;
+         line-height: 115%;
+         letter-spacing: -1.6px;
+      }
+      &__info {
+         font-size: 1.8rem;
+      }
+   }
+}
+
+@media screen and (min-width: 1000px) {
+   .container {
+      &__heading {
+         font-size: 7rem;
+         line-height: 121%;
+         letter-spacing: -2px;
+      }
+      &__info {
+         line-height: 154%;
+      }
+   }
+}
