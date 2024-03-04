@@ -12,7 +12,7 @@
    <body>
       <div class="wrapper">
          <header>
-            <img src="images/logo.png" alt="Head logo" />
+            <img src="images/logotype.svg" alt="Head logo" />
             <nav>
                <ul>
                   <li><a href="#">Works</a></li>
@@ -21,7 +21,7 @@
                   <li>
                      <a href="#"
                         ><img
-                           src="images/meatball-menu-icon.png"
+                           src="images/meatball-menu-icon.svg"
                            alt="menu icon"
                      /></a>
                   </li>
@@ -38,10 +38,21 @@
                   </p>
                </div>
                <div class="container__card">
-                  <img
-                     class="container__img"
-                     src="images/mount-fuji-large.jpg"
-                     alt="mount fuji" />
+                  <picture>
+                     <source
+                        media="(max-width: 768px)"
+                        srcset="images/mount-fuji-small" />
+                     <source
+                        media="(max-width: 1400px)"
+                        srcset="images/mount-fuji-medium" />
+                     <source
+                        media="(min-width: 1401px)"
+                        srcset="images/mount-fuji-large" />
+                     <img
+                        class="container__img"
+                        src="images/mount-fuji-small.jpg"
+                        alt="mount fuji" />
+                  </picture>
                </div>
             </div>
          </main>
