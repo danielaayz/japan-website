@@ -7,12 +7,20 @@
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
       <link rel="stylesheet" href="styles/index.css" />
+      <script
+         src="https://kit.fontawesome.com/a14db3a8ab.js"
+         crossorigin="anonymous"></script>
       <title>Japan</title>
    </head>
    <body>
       <div class="wrapper">
-         <header>
-            <img src="images/logotype.svg" alt="Head logo" />
+         <header class="header">
+            <a href="index.html"
+               ><img
+                  class="header__logo"
+                  src="images/logotype.svg"
+                  alt="Head logo"
+            /></a>
             <nav class="nav">
                <ul class="nav__list">
                   <li class="nav__list">
@@ -26,11 +34,8 @@
                   </li>
                   <li>
                      <a class="nav_link-menu" href="#"
-                        ><img
-                           class="nav__menu"
-                           src="images/meatball-menu-icon.svg"
-                           alt="menu icon"
-                     /></a>
+                        ><i class="fa-solid fa-ellipsis"></i
+                     ></a>
                   </li>
                </ul>
             </nav>
@@ -47,13 +52,13 @@
                <div class="container__card">
                   <picture>
                      <source
-                        media="(max-width: 320px)"
+                        media="(max-width: 766px)"
                         srcset="images/mount-fuji-small.jpg" />
                      <source
-                        media="(max-width: 1400px)"
+                        media="(max-width: 1100px)"
                         srcset="images/mount-fuji-medium.jpg" />
                      <source
-                        media="(min-width: 1401px)"
+                        media="(min-width: 1101px)"
                         srcset="images/mount-fuji-large.jpg" />
                      <img
                         class="container__img"
