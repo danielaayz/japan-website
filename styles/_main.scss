@@ -16,6 +16,8 @@
    &__info {
       width: 100%;
       max-width: 217px;
+      max-height: 49px;
+      margin-bottom: 57px;
    }
 }
 
@@ -28,6 +30,9 @@
       }
       &__info {
          font-size: 1.8rem;
+         width: 100%;
+         min-width: 574px;
+         margin-bottom: 45px;
       }
    }
 }
@@ -41,6 +46,7 @@
       }
       &__info {
          line-height: 154%;
+         margin-bottom: 45px;
       }
    }
 }
