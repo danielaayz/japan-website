@@ -15,30 +15,32 @@
    <body>
       <div class="wrapper">
          <header class="header">
-            <a href="index.html"
-               ><img
-                  class="header__logo"
-                  src="images/logotype.svg"
-                  alt="Head logo"
-            /></a>
-            <nav class="nav">
-               <ul class="nav__list">
-                  <li class="nav__list">
-                     <a class="nav__link" href="#">Works</a>
-                  </li>
-                  <li class="nav__list">
-                     <a class="nav__link" href="#">Services</a>
-                  </li>
-                  <li class="nav__list">
-                     <a class="nav__link" href="#">Contacts</a>
-                  </li>
-                  <li>
-                     <a class="nav_link-menu" href="#"
-                        ><i class="fa-solid fa-ellipsis"></i
-                     ></a>
-                  </li>
-               </ul>
-            </nav>
+            <div class="nav-container" id="nav-bar">
+               <a href="index.html"
+                  ><img class="logo" src="images/logotype.svg" alt="Head logo"
+               /></a>
+               <nav class="nav">
+                  <ul class="nav__ul">
+                     <li class="nav__link">
+                        <a href="#works">Works</a>
+                     </li>
+                     <li class="nav__link">
+                        <a href="#services">Services</a>
+                     </li>
+                     <li class="nav__link">
+                        <a href="#contacs">Contacts</a>
+                     </li>
+                     <li>
+                        <a class="icon" onclick="meatballMenu()"
+                           ><i class="fa-solid fa-ellipsis"></i
+                        ></a>
+                     </li>
+                  </ul>
+               </nav>
+               <!-- ta bort detta sen!! <span class="meatball-menu"><a href="#"
+                  ><i class="fa-solid fa-ellipsis"></i
+               ></a></span> -->
+            </div>
          </header>
          <main>
             <div class="container">
@@ -69,5 +71,15 @@
             </div>
          </main>
       </div>
+      <script>
+         function meatballMenu() {
+            let meatball = document.getElementById("nav-bar");
+            if (meatball.className === "nav-container") {
+               meatball.className += " responsive";
+            } else {
+               meatball.className = "nav-container";
+            }
+         }
+      </script>
    </body>
 </html>
